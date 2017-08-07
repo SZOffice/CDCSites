@@ -1,0 +1,134 @@
+<meta name="viewport" content="initial-scale=1,  user-scalable=1, minimum-scale=1, maximum-scale=1"></head>
+<style type="text/css">
+
+</style>
+    <script type="text/javascript" src="_lib/JS/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+function cookie(name, value, options) {
+        if (typeof value != 'undefined') {
+            options = options || {};
+            if (value === null ) {
+                value = '';
+                options.expires = -1;
+            }
+            var expires = '';
+            if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+                var date;
+                if (typeof options.expires == 'number') {
+                    date = new Date();
+                    date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
+                } else {
+                    date = options.expires;
+                }
+                expires = '; expires=' + date.toUTCString();
+            }
+            var path = options.path ? '; path=' + options.path : '';
+            var domain = options.domain ? '; domain=' + options.domain : '';
+            var secure = options.secure ? '; secure' : '';
+            document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+        } else {
+            var cookieValue = null ;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+    }
+
+var mappings = [
+    {name: 'CDCJOBSDEV5', ip: '10.1.9.55', title: 'Mirage'},     
+    {name: 'CDCJOBSDEV3', ip: '10.1.9.53', title: 'Panda'},        
+    {name: 'CDCJOBSDEV4', ip: '10.1.9.54', title: 'Darren'},
+    {name: 'CDCJOBSDEV1', ip: '10.1.9.51', title: 'Jacky'},    
+    {name: 'CDCJOBSDEV6', ip: '10.1.9.56', title: 'Eric'},    
+    {name: 'CDCJOBSDEV9', ip: '10.1.9.50', title: 'Sycee'},  
+    {name: 'CDCJOBSDEV10', ip: '10.1.9.59', title: 'Mervyn'}, 
+    {name: 'hkjobstest', ip: '10.1.0.50', title: 'Test Server', url: 'https://v8.test.rms.jobsdb.com/HK/'},
+    {name: '', title: 'HK Preview', url: 'https://v8.preview.rms.jobsdb.com/hk/en/emphome'},
+    {name: '', title: 'TH Preview', url: 'https://v8.preview.rms.jobsdb.co.th/th/en/emphome'},
+    {name: '', title: 'ID Preview', url: 'https://v8.preview.rms.jobsdb.co.id/ID/en/emphome'}
+];
+
+$(function () {
+    $.each(mappings, function (i, m) {
+        var option = $('<option value="'+m.name+'">'+(m.title || m.ip)+'</option>').data('url', m.url || '')
+        $('#servers').append(option);
+    });
+    var curServer = cookie('desktopserver');
+    $('#servers').val(curServer);
+    $('#btnGO').click(function(event) {
+        var option = $('#servers option:selected');
+        var name = option.val();
+        if(name.length == 0){
+            cookie('desktopserver', null, {expires:2532873600, path:'/', domain:'.jobsdb.com', secure:false});
+        }else{
+            cookie('desktopserver', name, {expires:2532873600, path:'/', domain:'.jobsdb.com', secure:false});
+        }
+        location.href = option.data('url') || 'https://v8.dev.rms.jobsdb.com/HK/en';
+    });
+    $('#btnBase10').click(function(event) {
+        var base10Source = $('#base10Source').val().split('|');
+        var dest = [];
+        $.each(base10Source, function (i, m) {
+            dest.push(parseInt(m, 36));
+            $('#base10Dest').html(dest.join(','));
+        });
+    });
+});
+</script>
+
+<div>
+<select id="servers" style="font-size: 30px;">
+</select>
+<button id="btnGO" style="font-size: 30px;">GO</button>
+</div>
+
+<div>
+<textarea id="base10Source" style="margin: 0px; width: 244px; height: 73px;"></textarea>
+<button id="btnBase10" style="font-size: 30px;">Base10>></button>
+<span id="base10Dest"></span>
+</div>
+
+<div>
+    <div style="display: block;">i
+    <a href="https://v8.dev.content.jobsdb.com/Content/v1/Javascript/AppMeasurement.js" target="_blank">v8.dev.content.jobsdb.com</a>
+    <br/>
+    <a href="https://hk.v8.dev.jobsdb.com/HK/EN/Login/AjaxEmployerLoginSubmit" target="_blank">login.v8.dev.jobsdb.com</a>
+    </div>
+    Host File:<br/>
+    <textarea style="margin: 0px; height: 281px; width: 512px;">
+####################### Dev Host file #######################
+10.1.9.48 	login.v8.dev.jobsdb.com
+
+10.1.9.48  v8.dev.content.jobsdb.com
+10.1.9.48  v8.dev.content0.jobsdb.com
+10.1.9.48  v8.dev.content1.jobsdb.com
+                                                                
+10.1.9.48  v8.dev.hk.counter.jobsdb.com
+10.1.9.48  v8.dev.id.counter.jobsdb.com
+10.1.9.48  v8.dev.my.counter.jobsdb.com
+10.1.9.48  v8.dev.ph.counter.jobsdb.com
+10.1.9.48  v8.dev.sg.counter.jobsdb.com
+10.1.9.48  v8.dev.th.counter.jobsdb.com
+                                                                
+10.1.9.48  v8.dev.rms.jobsdb.com
+10.1.9.48  v8.dev.rms.jobsdb.co.th
+10.1.9.48  v8.dev.rms.jobsdb.co.id
+                                                                
+10.1.9.48  v8.dev.jobsdb.com
+10.1.9.48  hk.v8.dev.jobsdb.com
+10.1.9.48  my.v8.dev.jobsdb.com
+10.1.9.48  ph.v8.dev.jobsdb.com
+10.1.9.48  sg.v8.dev.jobsdb.com
+10.1.9.48  th.v8.dev.jobsdb.com
+10.1.9.48  id.v8.dev.jobsdb.com
+####################### Dev Host file #######################
+    </textarea>
+</div>

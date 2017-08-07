@@ -1,0 +1,1198 @@
+﻿[{
+	"id": "0",
+	"name": "Common Use",
+	"status": "1",
+	"children": [{
+		"id": "10",
+		"name": "New RMS -- Admin",
+		"status": "1",
+		"url": "http://v8.dev.rms.jobsdb.com/HK/en/admin"
+	},
+	{
+		"id": "11",
+		"name": "New RMS -- HK Login",
+		"desc": "UserName:demo; Password:12345678",
+		"status": "1",
+		"url": "http://v8.dev.rms.jobsdb.com/HK/en/EmpVisitor/RMS"
+	},
+	{
+		"id": "11",
+		"name": "New RMS -- ID Login",
+		"desc": "UserName:demo; Password:12345678",
+		"status": "1",
+		"url": "http://v8.dev.rms.jobsdb.com/id/en/EmpVisitor/RMS"
+	},
+	{
+		"id": "11",
+		"name": "New RMS -- TH Login",
+		"desc": "UserName:demo; Password:12345678",
+		"status": "1",
+		"url": "http://v8.dev.rms.jobsdb.com/th/en/EmpVisitor/RMS"
+	},
+	{
+		"status": "1",
+		"url": "javascript:void(0);"
+	},
+	{
+		"id": "2",
+		"name": "SIS -- HK Dev",
+		"desc": "taile sales1/abcd@1234",
+		"status": "1",
+		"url": "http://dev.sis.jobsdb.hk/Login/login.aspx"
+	},	
+	{
+		"id": "2",
+		"name": "SIS -- HK Dev -- util",
+		"desc": "admin / 1234",
+		"status": "1",
+		"url": "http://dev.sis.jobsdb.hk/util/"
+	},	
+	{
+		"id": "8",
+		"name": "Dev -- Rule",
+		"status": "1",
+		"url": "http://v.dev.jobsdb.com/RuleGroupBinding/QuickMetaProperties.aspx"
+	},
+	{
+		"status": "1",
+		"url": "javascript:void(0);"
+	},
+    
+	{
+		"id": 3,
+		"name": "JobsDB 常用",
+        "desc": "Cookie redirect.......  Pay Feed.........  PostJobStep3.........  RMS Explain.........  Confluence.........  JIRA.........  Helpdesk",
+		"status": "1",
+		"isCollapse": true,
+		"children": [        
+        {
+            "id": "11",
+            "name": "Cookie redirect",
+            "status": "1",
+            "url": "cookie_redirect.html"
+        },
+        {
+            "id": "11",
+            "name": "Pay Feed",
+            "status": "1",
+            "url": "dataFeedResponse.html"
+        },
+        {
+            "id": "11",
+            "name": "PostJobStep3",
+            "status": "1",
+            "url": "PostJobStep3.html"
+        },
+        {
+            "id": "11",
+            "name": "Dev -- RMS Explain",
+            "status": "1",
+            "url": "http://10.2.1.43/Revamped_Validation_Framework_-_Adding_new_validation_rule"
+        },
+        {
+            "id": "1",
+            "name": "Confluence",
+            "desc": "",
+            "status": "1",
+            "url": "http://agile.seekasia.com/confluence/#starred"
+        },
+        {
+            "id": "1",
+            "name": "JIRA",
+            "desc": "jira",
+            "status": "1",
+            "url": "http://agile.seekasia.com/jira/browse/HJTMH-112?filter=10190"
+        },
+        {
+            "id": "1",
+            "name": "helpdesk",
+            "desc": "helpdesk",
+            "status": "1",
+            "url": "https://helpdesk.seekasia.com"
+        }]
+    },	
+	{
+		"status": "1",
+		"url": "javascript:void(0);"
+	}, 
+    
+	{
+		"id": 3,
+		"name": "在线工具",
+		"status": "1",
+		"isCollapse": true,
+		"children": [
+        {
+            "id": "2",
+            "name": "菜鸟工具",
+            "status": "1",
+            "url": "https://c.runoob.com/"
+        },
+        {
+            "id": "2",
+            "name": "在线工具 - 开源中国社区",
+            "status": "1",
+            "url": "http://tool.oschina.net/"
+        },
+        {
+            "id": "2",
+            "name": "站长工具",
+            "status": "1",
+            "url": "http://tool.chinaz.com/Tools/URLEncode.aspx "
+        }]
+    },
+	{
+		"status": "1",
+		"url": "javascript:void(0);"
+	},
+	{
+		"id": 3,
+		"name": "Dev Site",
+		"status": "1",
+		"isCollapse": true,
+		"children": [
+		{
+			"id": "11",
+			"name": "RMS -- Login",
+			"desc": "UserName:demo; Password:12345678",
+			"status": "1",
+			"url": "http://v8.dev.rms.jobsdb.com/HK/en/EmployerVisitor/RMS"
+		},
+		{
+			"id": "12",
+			"name": "New -- purchase_history",
+			"desc": "UserName:demo; Password:12345678",
+			"status": "0",
+			"url": "http://v8.dev.rms.jobsdb.com/HK/EN/emppurchaseonline/purchase-history"
+		},
+		{
+			"id": "13",
+			"name": "New -- purchase_how to pay",
+			"desc": "UserName:demo; Password:12345678",
+			"status": "0",
+			"url": "http://v8.dev.rms.jobsdb.com/HK/EN/emppurchaseonline/how-to-pay"
+		},
+		{
+			"id": "1",
+			"name": "Dev -- HK",
+			"desc": "UserName:demo; Password:12345678",
+			"status": "1",
+			"url": "http://hk.v8.dev.jobsdb.com/hk"
+		},
+		{
+			"id": "6",
+			"name": "Dev -- ID",
+			"status": "1",
+			"url": "http://id.v8.dev.jobsdb.com/id/en/Home/EmployerIndex"
+		},
+		{
+			"id": "7",
+			"name": "Dev -- Admin",
+			"status": "1",
+			"url": "http://hk.v8.dev.jobsdb.com/hk/en/admin"
+		},
+		{
+			"id": "8",
+			"name": "Dev -- Wordings",
+			"status": "1",
+			"url": "http://v8.dev.jobsdb.com/AdminWordings/Default.aspx"
+		}]
+	},
+	{
+		"status": "1",
+		"url": "javascript:void(0);"
+	}]
+},
+{
+	"id": "2",
+	"name": "JobStreet Site",
+	"status": "1",
+	"children": [
+	{
+		"id": "1",
+		"name": "MyJS Site",
+		"status": "1",
+		"children": [
+		{
+			"id": "1",
+			"name": "Local - SG",
+			"status": "1",
+			"url": "https://myjobstreet-local.jobstreet.com.sg/home/login.php?site=&language_code=3"
+		},
+		{
+			"id": "2",
+			"name": "Stage - ID",
+			"status": "1",
+			"url": "https://myjobstreet-stage.jobstreet.co.id/home/login.php?site=&language_code=3"
+		}]
+	},
+	{
+		"id": "2",
+		"name": "PAPI Site",
+		"status": "1",
+		"children": [{
+			"id": "1",
+			"name": "Local",
+			"status": "1",
+			"url": "http://papi-local.jobstreet.com/v/"
+		},
+		{
+			"id": "2",
+			"name": "Stage",
+			"status": "1",
+			"url": "http://api-stage.jobstreet.com"
+		},
+		{
+			"id": "3",
+			"name": "Normal Production",
+			"status": "1",
+			"url": "http://api.jobstreet.com"
+		},
+		{
+			"id": "4",
+			"name": "Recommendation Production",
+			"status": "1",
+			"url": "http://backend-api.seekasia.com"
+		}]
+	},
+	{
+		"id": "3",
+		"name": "Siva RC Site",
+		"status": "1",
+		"children": [
+		{
+			"id": "1",
+			"name": "Local",
+			"status": "1",
+			"url": "https://sivalocal.jobstreet.com/"
+		},
+		{
+			"id": "2",
+			"name": "Stage",
+			"status": "1",
+			"url": "https://sivastage.jobstreet.com/"
+		}]
+	}]
+},
+{
+	"id": "2",
+	"name": "RMS Site",
+	"status": "1",
+	"children": [
+	{
+		"id": "2",
+		"name": "Preview Site",
+		"status": "1",
+		"children": [
+		{
+			"id": "1",
+			"name": "New Rms Login - Preview HK",
+			"status": "1",
+			"url": "http://v8.preview.rms.jobsdb.com/HK/en/empvisitor/rms"
+		},
+		{
+			"id": "4",
+			"name": "New Rms Login - Preview ID",
+			"status": "1",
+			"url": "http://v8.preview.rms.jobsdb.co.id/id/en/empvisitor/rms"
+		},
+		{
+			"id": "5",
+			"name": "New Rms Login - Preview TH",
+			"status": "1",
+			"url": "http://v8.preview.rms.jobsdb.co.th/th/en/empvisitor/rms"
+		},
+		{
+			"id": "2",
+			"name": "Preview HK",
+			"desc": "sumousTest1/123456",
+			"status": "1",
+			"url": "http://hk.v8.preview.jobsdb.com/hk"
+		},
+		{
+			"id": "3",
+			"name": "Preview ID",
+			"status": "1",
+			"url": "http://id.v8.preview.jobsdb.com/id/en/Home/EmployerIndex"
+		}]
+	},
+	{
+		"id": "2",
+		"name": "Test Site",
+		"status": "1",
+		"children": [{
+			"id": "1",
+			"name": "New Rms Login - Test HK",
+			"status": "1",
+			"url": "http://v8.test.rms.jobsdb.com/hk/empvisitor/rms"
+		},
+		{
+			"id": "1",
+			"name": "New Rms Login - Test ID",
+			"status": "1",
+			"url": "http://v8.test.rms.jobsdb.co.id/id/empvisitor/rms"
+		},
+		{
+			"id": "1",
+			"name": "New Rms Login - Test TH",
+			"status": "1",
+			"url": "http://v8.test.rms.jobsdb.co.th/th/empvisitor/rms "
+		}]
+	}]
+},
+{
+	"id": "3",
+	"name": "SIS Site",
+	"status": "1",
+	"children": [
+	{
+		"id": "2",
+		"name": "Dev Site",
+		"status": "1",
+		"children": [
+		{
+			"id": "2",
+			"name": "HK Dev",
+			"desc": "taile sales1/abcd@1234",
+			"status": "1",
+			"url": "http://dev.sis.jobsdb.hk/Login/login.aspx"
+		}]
+	},
+	{
+		"id": "2",
+		"name": "Preveiw Site",
+		"status": "1",
+		"children": [
+		{
+			"id": "3",
+			"name": "HK Preview",
+			"desc": "taile sales/1234; admin/s1s1s1",
+			"status": "1",
+			"url": "http://hk.preview.crm.jobsdb.com/Login/login.aspx"
+		},
+		{
+			"id": "4",
+			"name": "ID Preview",
+			"desc": "taile sales/1234",
+			"status": "1",
+			"url": "http://v8.preview.crm.jobsdb.co.id/SIS/Menu"
+		}]
+	},
+	{
+		"id": "5",
+		"name": "Test Site",
+		"status": "1",
+		"children": [
+		{
+			"id": "1",
+			"name": "New Rms Login - Test HK",
+			"status": "1",
+			"desc": "taile sales1/1234",
+			"url": "http://v8.test.crm.jobsdb.com/login/login.aspx"
+		},
+		{
+			"id": "1",
+			"name": "New Rms Login - Test ID",
+			"status": "1",
+			"url": "http://v8.test.crm.jobsdb.co.id"
+		},
+		{
+			"id": "1",
+			"name": "New Rms Login - Test TH",
+			"status": "1",
+			"url": "http://v8.test.crm.jobsdb.co.th/ "
+		}]
+	}]
+},
+{
+	"id": "4",
+	"name": "Jenkins",
+	"status": "1",
+	"children": [
+	{
+		"id": "2",
+		"name": "JobsDB",
+        "desc": "preview / pro",
+		"status": "1",
+		"url": "http://http://jenkins.jobsdb.com/"
+	},
+    {
+		"id": "1",
+		"name": "MyJS",
+		"status": "1",
+		"children": [
+		{
+			"id": "1",
+			"name": "Dev / Stage",
+			"status": "1",
+			"url": "http://felis.jobstreet.com/view/MYJS_STAGE/job/MYJS_WEB_STAGE_DEPLOY/"
+		},
+		{
+			"id": "2",
+			"name": "Production",
+			"status": "1",
+			"url": "http://jenkins.live.jobstreet.com/login?from=%2F"
+		}]
+	},
+    {
+		"id": "1",
+		"name": "PAPI",
+		"status": "1",
+		"children": [
+		{
+			"id": "1",
+			"name": "Dev / Stage",
+			"status": "1",
+			"url": "http://jenkins.jobstreet.com:8080/job/PAPI_STAGE_BUILD/build?delay=0sec"
+		},
+		{
+			"id": "2",
+			"name": "Production",
+			"status": "1",
+			"url": "http://jenkins.live.jobstreet.com/login?from=%2F"
+		}]
+	},
+    {
+		"id": "1",
+		"name": "Siva RC",
+		"status": "1",
+		"children": [
+		{
+			"id": "1",
+			"name": "Dev / Stage",
+			"status": "1",
+			"url": "http://jenkins.jobstreet.com:8080/view/SiVA/job/SIVA_STAGE_BUILD/"
+		},
+		{
+			"id": "2",
+			"name": "Production",
+			"status": "1",
+			"url": "http://jenkins.live.jobstreet.com/login?from=%2F"
+		}]
+	}]
+},
+{
+	"id": "4",
+	"name": "Solr",
+	"status": "1",
+	"children": [{
+		"id": "1",
+		"name": "solr-HDM",
+		"status": "1",
+		"url": "http://localhost:8080/solr-HDM"
+	},
+	{
+		"id": "2",
+		"name": "solr-Example",
+		"status": "1",
+		"url": "http://localhost:8080/solr-Example"
+	},
+	{
+		"id": "2",
+		"name": "Dev Site",
+		"status": "1",
+		"children":[
+		{
+			"id": "1",
+			"name": "talent search v2",
+			"status": "1",
+			"url": "http://10.1.0.213:8080/solr/#/tal-candu-hk"
+		},
+		{
+			"id": "2",
+			"name": "talent search status v2",
+			"status": "1",
+			"url": "http://10.1.0.213:8080/solr/#/tal-candu-hkstatus"
+		},
+		{
+			"id": "3",
+			"name": "talent search v1",
+			"status": "1",
+			"url": "http://10.1.0.179:8080/solr-TAL/#/HK2"
+		},
+		{
+			"id": "4",
+			"name": "talent search status v1",
+			"status": "1",
+			"url": "http://10.1.0.179:8080/solr-TAL/#/HK2Status"
+		}
+		]
+	},
+	{
+		"id": "3",
+		"name": "Preview Site",
+		"status": "1",
+		"children":[
+		{
+			"id": "1",
+			"name": "HK talent search",
+			"status": "1",
+			"url": "http://202.45.131.68:8080/solr-TAL/#/HK"
+		},
+		{
+			"id": "2",
+			"name": "HK talent search status",
+			"status": "1",
+			"url": "http://202.45.131.68:8080/solr-TAL/#/HKStatus/"
+		},
+		{
+			"id": "1",
+			"name": "ID talent search",
+			"status": "1",
+			"url": "http://202.45.131.68:8080/solr-TAL/#/ID"
+		},
+		{
+			"id": "2",
+			"name": "ID talent search status",
+			"status": "1",
+			"url": "http://202.45.131.68:8080/solr-TAL/#/IDStatus/"
+		},
+		{
+			"id": "3",
+			"name": "PH talent search",
+			"status": "1",
+			"url": "http://202.45.131.68:8080/solr-TAL/#/PH"
+		},
+		{
+			"id": "4",
+			"name": "PH talent search status",
+			"status": "1",
+			"url": "http://202.45.131.68:8080/solr-TAL/#/PHStatus"
+		}
+		]
+	}]
+},
+{
+	"id": "5",
+	"name": "TH Preveiw Site",
+	"status": "0",
+	"children": [{
+		"id": "1",
+		"name": "Site Map",
+		"desc": "Site Map",
+		"status": "1",
+		"url": "http://th.preview.dimension.jobsdb.com/sitemap/"
+	},
+	{
+		"id": "2",
+		"name": "CompanyList",
+		"desc": "UserName:hidulf; Password:1234",
+		"status": "1",
+		"url": "http://th.preview.dimension.jobsdb.com/sitemap/CompanyList.asp"
+	},
+	{
+		"id": "3",
+		"name": "BackOffice",
+		"desc": "UserID:hidulf; Password:1234",
+		"status": "1",
+		"url": "http://th.preview.dimension.jobsdb.com/backoffice/V1/Login/Login.asp?R=64693051576614"
+	},
+	{
+		"id": "4",
+		"name": "AAT Holdings Co Ltd - TH",
+		"status": "1",
+		"-AID": "99999998",
+		"-ACCode": "AATTH",
+		"-ACName": "AAT Holdings Co Ltd - TH",
+		"children": [{
+			"id": "1",
+			"name": "AAT -- Account Login",
+			"status": "1",
+			"url": "http://th.preview.dimension.jobsdb.com/sitemap/Company_Login.asp?AC=AATTH&CompanyName=AAT%20Holdings%20Co%20Ltd&ADRE60183352231979"
+		},
+		{
+			"id": "2",
+			"name": "AAT -- Admin Login",
+			"status": "1",
+			"url": "http://th.preview.dimension.jobsdb.com/admin/Login/Login.asp?AC=AATTH&LP=1&R=ADRE98883783817292"
+		},
+		{
+			"id": "3",
+			"name": "AAT -- Recruiter Login",
+			"status": "1",
+			"url": "http://th.preview.dimension.jobsdb.com/recruiter/Login/HLogin/Login.asp?AC=AATTH&LP=1&R=CNB220938837528228"
+		},
+		{
+			"id": "4",
+			"name": "EntityName:AAT Holding Ltd. -- Front End URL",
+			"status": "1",
+			"url": "http://th.preview.dimension.jobsdb.com/career/Default.asp?PID=1&AC=AATTH&EC=AAT001&GC=&LID=1&SP=1&THW180154055356980"
+		}]
+	}]
+},
+{
+	"id": "6",
+	"name": "SG Preveiw Site",
+	"status": "0",
+	"children": [{
+		"id": "1",
+		"name": "Site Map",
+		"desc": "Site Map",
+		"status": "1",
+		"url": "http://sg.preview.dimension.jobsdb.com/sitemap/"
+	},
+	{
+		"id": "2",
+		"name": "CompanyList",
+		"desc": "UserName:admin; Password:1234",
+		"status": "1",
+		"url": "http://sg.preview.dimension.jobsdb.com/sitemap/CompanyList.asp"
+	},
+	{
+		"id": "3",
+		"name": "BackOffice",
+		"desc": "UserID:admin; Password:12345678",
+		"status": "1",
+		"url": "http://sg.preview.dimension.jobsdb.com/backoffice/V1/Login/Login.asp?R=63795834779739"
+	},
+	{
+		"id": "4",
+		"name": "AAT Holdings Co Ltd - SG",
+		"status": "1",
+		"-AID": "10100039",
+		"-ACCode": "AAT",
+		"-ACName": "AAT Holdings Co Ltd - SG",
+		"children": [{
+			"id": "1",
+			"name": "AAT -- Account Login",
+			"status": "1",
+			"url": "http://sg.preview.dimension.jobsdb.com/sitemap/Company_Login.asp?AC=AAT&CompanyName=AAT%20Holdings%20Co%20Ltd%20-%20SG&SGCB81179445981980"
+		},
+		{
+			"id": "2",
+			"name": "AAT -- Admin Login",
+			"status": "1",
+			"url": "http://sg.preview.dimension.jobsdb.com/admin/Login/Login.asp?AC=AAT&LP=1&R=SGCB88312494754792"
+		},
+		{
+			"id": "3",
+			"name": "AAT -- Recruiter Login",
+			"status": "1",
+			"url": "http://sg.preview.dimension.jobsdb.com/recruiter/Login/HLogin/Login.asp?AC=AAT&LP=1&R=SGCB71158564090729"
+		},
+		{
+			"id": "4",
+			"name": "EntityName:AAT Holding Ltd -- Front End URL",
+			"status": "1",
+			"url": "http://sg.preview.dimension.jobsdb.com/career/Default.asp?PID=1&AC=AAT&EC=AAT001&GC=&LID=1&SP=1&FR=JOBSDB&SGCB49454897642136"
+		}]
+	}]
+},
+{
+	"id": "7",
+	"name": "ID Preveiw Site",
+	"status": "0",
+	"children": [{
+		"id": "1",
+		"name": "Site Map",
+		"desc": "Site Map",
+		"status": "1",
+		"url": "http://preview.dimension.jobsdb.co.id/sitemap/"
+	},
+	{
+		"id": "2",
+		"name": "CompanyList",
+		"desc": "UserName:; Password:",
+		"status": "1",
+		"url": "http://preview.dimension.jobsdb.co.id/sitemap/Login.asp?/sitemap/CompanyList.asp"
+	},
+	{
+		"id": "3",
+		"name": "BackOffice",
+		"desc": "UserID:hidulf; Password:1234",
+		"status": "1",
+		"url": "http://preview.dimension.jobsdb.co.id/backoffice/V1/Login/Login.asp?R=2261716127396"
+	},
+	{
+		"id": "4",
+		"name": "AAT Holding",
+		"status": "1",
+		"-AID": "99999999",
+		"-ACCode": "AAT",
+		"-ACName": "AAT Holding",
+		"children": [{
+			"id": "1",
+			"name": "AAT -- Account Login",
+			"status": "1",
+			"url": "http://preview.dimension.jobsdb.co.id/sitemap/Company_Login.asp?AC=AAT&CompanyName=AAT%20Holding&IDB186539858579636"
+		},
+		{
+			"id": "2",
+			"name": "AAT -- Admin Login",
+			"status": "1",
+			"url": "http://preview.dimension.jobsdb.co.id/admin/Login/Login.asp?AC=AAT&LP=1&R=IDB132891047000885"
+		},
+		{
+			"id": "3",
+			"name": "AAT -- Recruiter Login",
+			"status": "1",
+			"url": "http://preview.dimension.jobsdb.co.id/recruiter/Login/HLogin/Login.asp?AC=AAT&LP=1&R=IDB171189081668854"
+		},
+		{
+			"id": "4",
+			"name": "EntityName:AAT Holding -- Front End URL",
+			"status": "1",
+			"url": "http://preview.dimension.jobsdb.co.id/career/Default.asp?PID=1&AC=AAT&EC=AAT001&GC=&LID=1&SP=1&FR=JOBSDB&IDB285422915220261"
+		}]
+	}]
+},
+{
+	"id": "8",
+	"name": "SCB Preveiw Site",
+	"status": "0",
+	"children": [{
+		"id": "1",
+		"name": "Site Map",
+		"desc": "Site Map",
+		"status": "1",
+		"url": "http://sg.preview.dimension.scb.jobsdb.com/sitemap/"
+	},
+	{
+		"id": "2",
+		"name": "CompanyList",
+		"desc": "UserName:; Password:",
+		"status": "1",
+		"url": "http://sg.preview.dimension.scb.jobsdb.com/sitemap/Login.asp?/sitemap/CompanyList.asp"
+	},
+	{
+		"id": "3",
+		"name": "BackOffice",
+		"desc": "UserID:hidulf; Password:1234",
+		"status": "1",
+		"url": "http://sg.preview.dimension.scb.jobsdb.com/backoffice/V1/Login/Login.asp?R=54751950502396"
+	},
+	{
+		"id": "4",
+		"name": "Standard Chartered Bank",
+		"status": "1",
+		"-AID": "10100187",
+		"-ACCode": "SCB",
+		"-ACName": "Standard Chartered Bank",
+		"children": [{
+			"id": "1",
+			"name": "SCB -- Account Login",
+			"status": "1",
+			"url": "http://sg.preview.dimension.scb.jobsdb.com/sitemap/Company_Login.asp?AC=SCB&CompanyName=Standard%20Chartered%20Bank&SGCB95284670591355"
+		},
+		{
+			"id": "2",
+			"name": "SCB -- Admin Login",
+			"status": "1",
+			"url": "http://sg.preview.dimension.jobsdb.com/admin/Login/HLogin/Login.asp?AC=AAT&LP=1&R=SGCB71158564090729"
+		},
+		{
+			"id": "3",
+			"name": "SCB -- Recruiter Login",
+			"status": "1",
+			"url": "http://sg.preview.dimension.jobsdb.com/recruiter/Login/HLogin/Login.asp?AC=AAT&LP=1&R=SGCB71158564090729"
+		},
+		{
+			"id": "4",
+			"name": "EntityName:AAT Holding Ltd -- Front End URL",
+			"status": "1",
+			"url": "http://sg.preview.dimension.jobsdb.com/career/Default.asp?PID=1&AC=AAT&EC=AAT001&GC=&LID=1&SP=1&FR=JOBSDB&SGCB49454897642136"
+		}]
+	}]
+},
+{
+	"id": "9",
+	"name": "Demo Site",
+	"status": "0",
+	"children": [{
+		"id": "1",
+		"name": "Site Map",
+		"desc": "Site Map",
+		"status": "1",
+		"url": "http://demo.dimension.jobsdb.com/sitemap/"
+	},
+	{
+		"id": "2",
+		"name": "CompanyList",
+		"desc": "UserName:hidulf; Password:1234",
+		"status": "1",
+		"url": "http://demo.dimension.jobsdb.com/sitemap/Login.asp?/sitemap/CompanyList.asp"
+	},
+	{
+		"id": "3",
+		"name": "BackOffice",
+		"desc": "UserID:hidulf; Password:1234",
+		"status": "1",
+		"url": "http://demo.dimension.jobsdb.com/backoffice/V1/Login/Login.asp?R=54751950502396"
+	},
+	{
+		"id": "4",
+		"name": "[DEMO]AAT Holdings Limited, Hong Kong",
+		"status": "1",
+		"-AID": "99999999",
+		"-ACCode": "DM",
+		"-ACName": "[DEMO]AAT Holdings Limited, Hong Kong",
+		"children": [{
+			"id": "1",
+			"name": "DM -- Account Login",
+			"status": "1",
+			"url": "http://demo.dimension.jobsdb.com/sitemap/Company.asp?AC=DM&CompanyName=[DEMO]AAT%20Holdings%20Limited,%20Hong%20Kong&HKB247976320981979"
+		},
+		{
+			"id": "2",
+			"name": "DM -- Admin Login",
+			"status": "1",
+			"url": "http://demo.dimension.jobsdb.com/admin/Login/Login.asp?AC=DM&LP=1&R=HKB22463495731353"
+		},
+		{
+			"id": "3",
+			"name": "DM -- Recruiter Login",
+			"status": "1",
+			"url": "http://demo.dimension.jobsdb.com/recruiter/Login/Login.asp?AC=DM&LP=1&R=HKB250345575809479"
+		},
+		{
+			"id": "4",
+			"name": "EntityName:AAT Holding -- Front End URL",
+			"status": "1",
+			"url": "http://demo.dimension.jobsdb.com/career/Default.asp?PID=1&AC=DM&EC=AAT001&GC=&LID=1&SP=1&FR=JOBSDB&HKB222060793638229"
+		}]
+	}]
+},
+{
+	"id": "10",
+	"name": "Production Site",
+	"status": "0",
+	"children": [{
+		"id": "1",
+		"name": "Site Map",
+		"desc": "Site Map",
+		"status": "1",
+		"url": "http://dimension.jobsdb.com/sitemap/"
+	},
+	{
+		"id": "2",
+		"name": "CompanyList",
+		"desc": "UserName:; Password:",
+		"status": "1",
+		"url": "http://dimension.jobsdb.com/sitemap/Login.asp?/sitemap/CompanyList.asp"
+	},
+	{
+		"id": "3",
+		"name": "BackOffice",
+		"desc": "UserID:; Password:",
+		"status": "1",
+		"url": "http://dimension.jobsdb.com/backoffice/V1/Login/Login.asp?R=54751950502396"
+	},
+	{
+		"id": "4",
+		"name": "AAT Holdings Limited, Hong Kong",
+		"status": "1",
+		"-AID": "99999999",
+		"-ACCode": "DM",
+		"-ACName": "AAT Holdings Limited, Hong Kong",
+		"children": [{
+			"id": "1",
+			"name": "DM -- Account Login",
+			"status": "1",
+			"url": "http://dimension.jobsdb.com/sitemap/Company.asp?AC=DM&CompanyName=AAT%20Holdings%20Limited,%20Hong%20Kong&HKB292158144712449"
+		},
+		{
+			"id": "2",
+			"name": "DM -- Admin Login",
+			"status": "1",
+			"url": "http://dimension.jobsdb.com/admin/Login/Login.asp?AC=DM&LP=1&R=HKB170853388309479"
+		},
+		{
+			"id": "3",
+			"name": "DM -- Recruiter Login",
+			"status": "1",
+			"url": "http://dimension.jobsdb.com/recruiter/Login/Login.asp?AC=DM&LP=1&R=HKB155185663700104"
+		},
+		{
+			"id": "4",
+			"name": "EntityName:AAT & Holding -- Front End URL",
+			"status": "1",
+			"url": "https://dimension.jobsdb.com/career/Default.asp?PID=1&AC=DM&EC=AAT001&GC=&LID=1&SP=1&HKB162409609556198"
+		}]
+	}]
+},
+{
+	"id": "11",
+	"name": "Dev Micro Site",
+	"status": "0",
+	"children": [{
+		"id": "1",
+		"name": "Site Map",
+		"desc": "Company UserName:admin; Password:1234",
+		"status": "1",
+		"url": "http://dev.microsite.jobsdb.com/sitemap/"
+	},
+	{
+		"id": "2",
+		"name": "AAT Holdings Limited, Hong Kong",
+		"status": "1",
+		"-AID": "99999999",
+		"-ACCode": "Dimension",
+		"-ACName": "AAT Holdings Limited, Hong Kong",
+		"children": [{
+			"id": "1",
+			"name": "Dimension -- Account Login",
+			"status": "1",
+			"url": "http://dev.microsite.jobsdb.com/sitemap/Company.asp?AC=Dimension&CDR192065066099167"
+		},
+		{
+			"id": "2",
+			"name": "Dimension -- Admin Login",
+			"status": "1",
+			"url": "http://dev.microsite.jobsdb.com/admin/Login/Login.asp?AC=Dimension&LP=1&R=CDR197945368289948"
+		},
+		{
+			"id": "3",
+			"name": "Dimension -- Recruiter Login",
+			"status": "1",
+			"url": "http://dev.microsite.jobsdb.com/recruiter/Login/Login.asp?AC=Dimension&LP=1&R=CDR13539240360260"
+		},
+		{
+			"id": "4",
+			"name": "EntityName:AAT Holdings Ltd. -- Front End URL",
+			"status": "1",
+			"url": "http://dev.microsite.jobsdb.com/career/Default.asp?PID=1&AC=Dimension&EC=AAT001&GC=&LID=1&SP=1&FR=JOBSDB&CDR185430544614792"
+		}]
+	}]
+},
+{
+	"id": "12",
+	"name": "Other Micro Sites",
+	"status": "0",
+	"children": [{
+		"id": "1",
+		"name": "HK Preview",
+		"status": "0",
+		"children": [{
+			"id": "1",
+			"name": "Site Map",
+			"desc": "Company UserName:dimension sitemap; Password:D08support",
+			"status": "1",
+			"url": "http://preview.microsite.jobsdb.com/sitemap/"
+		},
+		{
+			"id": "2",
+			"name": "AAT Holdings Co Ltd -- Recruiter Login",
+			"status": "1",
+			"url": "http://preview.microsite.jobsdb.com/recruiter/Login/Login.asp?AC=AAT&LP=1&R=FEB173053705692291"
+		}]
+	},
+	{
+		"id": "2",
+		"name": "TH Preview",
+		"status": "0",
+		"children": [{
+			"id": "1",
+			"name": "Site Map",
+			"desc": "Company UserName:admin; Password:1234",
+			"status": "1",
+			"url": "http://th.preview.microsite.jobsdb.com/sitemap/"
+		},
+		{
+			"id": "2",
+			"name": "AAT Holdings Co Ltd - TH -- Recruiter Login",
+			"status": "1",
+			"url": "http://th.preview.microsite.jobsdb.com/recruiter/Login/Login.asp?AC=AATTH&LP=1&R=THW165273249149323"
+		}]
+	},
+	{
+		"id": "3",
+		"name": "SG Preview",
+		"status": "0",
+		"children": [{
+			"id": "1",
+			"name": "Site Map",
+			"desc": "Company UserName:admin; Password:1234",
+			"status": "1",
+			"url": "http://sg.preview.microsite.jobsdb.com/sitemap/"
+		},
+		{
+			"id": "2",
+			"name": "AAT Holdings Co Ltd - SG -- Recruiter Login",
+			"status": "1",
+			"url": "http://sg.preview.microsite.jobsdb.com/recruiter/Login/Login.asp?AC=AAT&LP=1&R=SGCB15631830692291"
+		}]
+	},
+	{
+		"id": "4",
+		"name": "CN Preview",
+		"status": "0",
+		"children": [{
+			"id": "1",
+			"name": "Site Map",
+			"desc": "Company UserName:dimension sitemap; Password:D08support",
+			"status": "1",
+			"url": "http://cn.preview.microsite.jobsdb.com/sitemap/"
+		},
+		{
+			"id": "2",
+			"name": "AAT Holdings -- Recruiter Login",
+			"status": "1",
+			"url": "http://cn.preview.microsite.jobsdb.com/recruiter/Login/Login.asp?AC=AAT&LP=1&R=CNB233515131473541"
+		}]
+	}]
+},
+{
+	"id": "13",
+	"name": "Dev Career Fair Site",
+	"status": "0",
+	"children": [{
+		"id": "1",
+		"name": "Site Map",
+		"desc": "Company UserName:admin; Password:1234",
+		"status": "1",
+		"url": "http://dev.careerfair.jobsdb.com/sitemap/"
+	},
+	{
+		"id": "2",
+		"name": "AAT Holdings",
+		"status": "1",
+		"-AID": "10100039",
+		"-ACCode": "AAT",
+		"-ACName": "AAT Holdings",
+		"children": [{
+			"id": "1",
+			"name": "AAT -- Account Login",
+			"status": "1",
+			"url": "http://dev.careerfair.jobsdb.com/sitemap/Company.asp?AC=AAT&CDR176066225767136"
+		},
+		{
+			"id": "2",
+			"name": "AAT -- Admin Login",
+			"status": "1",
+			"url": "http://dev.careerfair.jobsdb.com/admin/Login/Login.asp?AC=AAT&LP=1&R=CDR135047113895416"
+		},
+		{
+			"id": "3",
+			"name": "AAT -- Recruiter Login",
+			"status": "1",
+			"url": "http://dev.careerfair.jobsdb.com/recruiter/Login/Login.asp?AC=AAT1&LP=1&R=CDR175696527957917"
+		},
+		{
+			"id": "4",
+			"name": "EntityName:AAT Holdings Limited, Hong Kong -- Front End URL",
+			"status": "1",
+			"url": "http://dev.careerfair.jobsdb.com/career/default.asp?PID=1&AC=AAT&EC=AAT001&GC=&LID=Null&SP=1"
+		}]
+	}]
+},
+{
+	"id": "14",
+	"name": "Other Career Fair Sites",
+	"status": "0",
+	"children": {
+		"id": "1",
+		"name": "web3/preview",
+		"status": "1",
+		"children": [{
+			"id": "1",
+			"name": "BackOffice",
+			"desc": "Thailand--mona/1234; Philipines/Malaysia--keith/1234",
+			"status": "1",
+			"url": "http://web3.careerfair.jobsdb.com/backoffice/Login/Login.asp?R=71791440248489"
+		},
+		{
+			"id": "2",
+			"name": "CompanyList",
+			"status": "1",
+			"url": "http://web3.careerfair.jobsdb.com/sitemap/companyList.asp?AC=AAT&LP=1&R=FEB173053705692291"
+		},
+		{
+			"id": "3",
+			"name": "JobsDB Singapore Career Expo 2012",
+			"status": "1",
+			"-AID": "20100026",
+			"-ACCode": "20100026",
+			"-ACName": "JobsDB Singapore Career Expo 2012",
+			"children": {
+				"id": "3",
+				"name": "AAT -- Recruiter Login",
+				"desc": "admin1/1234",
+				"status": "1",
+				"url": "http://web3.careerfair.jobsdb.com/recruiter/Login/Login.asp?AC=20100026&LP=1&R=FEB19748041629791"
+			}
+		}]
+	}
+},
+{
+	"id": "17",
+	"name": "NUS Preview",
+	"status": "0",
+	"children": {
+		"id": "1",
+		"name": "Front End",
+		"desc": "LoginID:csdimension@jobsdb.com   Password:1234",
+		"status": "1",
+		"url": "http://preview.jijis.jobsdb.com/career/Default.asp?PID=8&AC=JIJISTest&EC=JIJIS&Mode=New&GC=JIJIS&LID=1&LFR=8&SP=8&HKB156715029478073"
+	}
+},
+{
+	"id": "15",
+	"name": "CDC Dimension Others",
+	"status": "0",
+	"children": {
+		"id": "2",
+		"name": "AddEmailTemplate - Dev",
+		"status": "0",
+		"url": "http://dev.dimension.jobsdb.com/housekeeping/addemailtemplate/addemailtemplate.asp"
+	}
+},
+{
+	"id": "30",
+	"name": "Study Sites",
+	"status": "1",
+	"children": [{
+		"id": "1",
+		"name": "cnblogs - dfg727",
+		"status": "1",
+		"url": "http://www.cnblogs.com/dfg727/"
+	},
+	{
+		"id": "2",
+		"name": "oschina",
+		"status": "1",
+		"url": "http://www.oschina.net/"
+	},
+	{
+		"id": "3",
+		"name": "underscore.js",
+		"status": "1",
+		"url": "http://www.css88.com/doc/underscore/"
+	},
+	{
+		"id": "4",
+		"name": "Bootstrap - china",
+		"status": "1",
+		"url": "http://www.bootcss.com/"
+	},
+	{
+		"id": "5",
+		"name": "cdnjs",
+		"status": "1",
+		"url": "http://www.cdnjs.cn/"
+	},
+	{
+		"id": "6",
+		"name": "iconfont",
+		"status": "1",
+		"url": "http://www.iconfont.cn/"
+	},
+	{
+		"id": "6",
+		"name": "Highcharts",
+		"desc": "纯js图表库",
+		"status": "1",
+		"url": "http://www.hcharts.cn/index.php"
+	},	
+	{
+		"id": "6",
+		"name": "在线 bootstrap 可视化布局",
+		"status": "1",
+		"url": "http://www.ibootstrap.cn/"
+	},
+	{
+		"id": "6",
+		"name": "bootstrap 表单构造",
+		"status": "1",
+		"url": "http://www.bootcss.com/p/bootstrap-form-builder/"
+	}]	
+}]

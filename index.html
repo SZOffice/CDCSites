@@ -1,0 +1,115 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<link rel="stylesheet" type="text/css" href="_lib/CSS/CDCSites.css">
+	<link rel="stylesheet" type="text/css" href="_lib/CSS/Common.css">
+    <script type="text/javascript" src="_lib/JS/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="_lib/JS/angular.min.js"></script>
+    
+    <title>Index by AngularJS</title>
+    <script type="text/javascript">
+        /*!
+        * Copyright 2015, Mirage Lu
+        */
+	var bodyApp = angular.module("bodyApp", []);
+    bodyApp
+	.factory('WebService', function ($http) {
+		var getSiteList = [
+			{"id": "0", "name": "Common Use", "status": "1", "children":[
+				{"id": "1", "name": "Google -- 翻译", "status": "1", "url": "http://translate.google.cn/?hl=zh-CN&tab=wT#auto/en/"},
+				{"id": "2", "name": "", "status": "1", "url": "javascript:void(0);"},
+				{"id": "3", "name": "New RMS -- HK Login", "desc": "UserName:demo; Password:12345678", " status": "1", "children": [
+					{"id": "1", "name": "New RMS -- HK Login", "desc": "UserName:demo; Password:12345678", " status": "1", "url": "http://v8.dev.rms.jobsdb.com/HK/en/EmpVisitor/RMS"},
+					{"id": "1", "name": "New RMS -- HK Login", "desc": "UserName:demo; Password:12345678", " status": "1", "url": "http://v8.dev.rms.jobsdb.com/HK/en/EmpVisitor/RMS"}
+				]}
+			]},
+			{"id": "1", "name": "Preveiw Site", "status": "1", "children":[
+				{"id": "1", "name": "New Rms Login - Preview HK", "status": "1", "url": "http://v8.preview.rms.jobsdb.com/HK/en/empvisitor/rms"},
+				{"id": "2", "name": "New Rms Login - Preview ID", "status": "1", "url": "http://v8.preview.rms.jobsdb.co.id/id/en/empvisitor/rms"}
+			]}
+		];
+		return {
+			getSiteListByJSON: function(options) {
+				console.log("WebService - getSiteListByJSON - options:", JSON.stringify(options));
+				return getSiteList;
+			},
+			getSiteList: function(options) {
+				console.log("WebService - getSiteList - options:", JSON.stringify(options));
+				var url = "Angular_CDCSites.json"
+				return $http.get(url);
+			}
+		};
+	})
+	.controller("mainCtrl", ["$scope", "WebService", function($scope, WebService) {
+		console.log("start controller");
+		//$scope.siteList = WebService.getSiteListByJSON({ CategoryId: 1 });
+		var promise = WebService.getSiteList({ CategoryId: 1 });                                    
+		promise.then(function (response) {
+			$scope.siteList = response.data;
+		});
+    }])
+    .directive('category', function factory() {
+    	return {
+    		restrict:'A',
+			link:function(scope,element,attrs) {
+				$(element).mouseover(function () {
+					$(this).addClass("dtSiteOver");
+				}).mouseout(function () {
+					$(this).removeClass("dtSiteOver");
+				}).click(function () {
+					$("dd.ddSite").hide().removeClass("ng-hide");
+					$(this).next("dd.ddSite").toggle();
+				});
+			}
+        };
+    })
+    .directive('childSite', function factory() {
+    	return {
+    		restrict:'A',
+			link:function(scope,element,attrs) {
+				$(element).click(function () {
+					
+					$(this).next(".ulChildSite").toggleClass("ng-hide");
+				});
+			}
+        };
+    });
+        
+    </script>
+    <style type="text/css">
+        .display{display:none;}
+		.liChildSite{margin-left:-40px;}
+		a.oddChildSite{background-color: #E6DBDB;}
+    </style>
+</head>
+<body id="ng-app" ng-app="bodyApp">
+    <div style="clear:both;" ng-controller="mainCtrl">
+		<dl class="dlSite" id="dlSite" ng-repeat="category in siteList | filter : {status : '1'}">
+			<dt class="dtSite" category>{{category.name}}</dt>
+			<dd class="ddSite" ng-hide="$index!=0" >
+				<ul class="divSiteLink">
+					<li class="liSite" ng-repeat="site in category.children | filter : {status : '1'} track by $index"
+						ng-class="{'odd':$index%2==0}">
+						<span class="spanParentSiteLink" style="padding-left:30px;" ng-if="!site.url && !site.desc" child-site>{{site.name}}</span>
+                        <span class="spanParentSiteLink" style="padding-left:30px;" ng-if="!site.url && !!site.desc" child-site>{{site.name}} (<span class="spanDesc">Description:</span> {{site.desc}}) </span>
+						<ul class="ulChildSite" ng-if="!site.url && !!site.children" 
+							ng-show="!site.isCollapse">
+							<li class="liChildSite"
+							ng-repeat="childSite in site.children | filter : {status : '1'} track by $index">
+								<a href="{{childSite.url}}" class="aSiteChildLink"
+									ng-class="{'oddChildSite':$index%2==0}" style="padding-left:50px;" title="">
+									<span class="spanSiteLink" ng-if="!childSite.desc">{{childSite.name}}</span>
+									<span class="spanSiteLink" ng-if="!!childSite.desc">{{childSite.name}} (<span class="spanDesc">Description:</span>{{childSite.desc}})</span>
+								</a>
+							</li>
+						</ul>
+						
+						<a href="{{site.url}}" class="aSiteLink aLink" style="padding-left:30px;" title="" ng-if="!!site.url">
+							<span class="spanSiteLink" ng-if="!site.desc">{{site.name}}</span>
+							<span class="spanSiteLink" ng-if="!!site.desc">{{site.name}} (<span class="spanDesc">Description:</span>{{site.desc}})</span>
+						</a>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+    </div>
+</body>
+</html>

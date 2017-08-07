@@ -1,0 +1,40 @@
+<html>
+<script type="text/javascript">
+function onSubmit(){
+	var form = document.forms["DataFeed"]
+	form.action = "http://v8.dev.jobsdb.com/"+document.getElementById("countryCode").value+"/en/PaymentGatewayDataFeed/DataFeedRespond"
+	form.submit();
+}
+
+function changeCountryCode(){
+	document.getElementById("countryDB").innerText="JobsDB"+document.getElementById("countryCode").value;
+}
+</script>
+
+<body>
+<html>
+<head>
+<title>data feed page</title>
+
+<form name="DataFeed" id="DataFeed" action="" method="post">
+<select name="countryCode" id="countryCode" onchange="changeCountryCode();">
+	<option value="HK">HK</option>
+	<option value="ID">ID</option>
+	<option value="TH">TH</option>
+</select>&nbsp;
+<select name="successcode">
+	<option value="0">Success</option>
+	<option value="1">Failure</option>
+	<option value="-1">Cancel</option>
+</select>
+<br/><br/>
+ref: <input type="input" name="ref" value="PPL74037"></input> PPL + <span id="countryDB">JobsDBHK</span>.dbo.Billing_PurchaseOrder_Master.PurchaseOrderID
+<br/><br/>
+amt: <input type="input" name="amt" value="1"></input>
+<br/><br/>
+<input type="hidden" name="PayRef" value="PayDollar1234"></input>
+<input type="hidden" name="payMethod" value="VISA"></input>
+
+<input type="button" value="Submit" onclick="onSubmit();" />
+</form>
+</html>
